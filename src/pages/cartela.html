@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="."/>
+    <meta charset="UTF-8">	
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:url" content="" /><!-- bota o site aqui -->
+    <meta property="og:title" content="Bingo da Effecti" />
+    <meta property="og:site_name" content="Bingo da Effecti" />
+    <meta property="og:image" content="../src/images/image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="800" /> 
+    <meta property="og:image:height" content="600" />
+    <meta property="og:type" content="website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/master.css">
+    <link rel="icon" href="../images/effecti-logo.png" sizes="16x16" />
+    <title>CARTELA | bingo online</title>
+    <script src="../js/main.js"></script>
+    <script src="../js/gerarCartela.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main-card">
+            <div class="division card-left">
+                
+                <div class="menu" id="menu-cartela">
+                    <h1>Clique no botão abaixo para gerar uma cartela</h1>
+                    <h3>Boa sorte!</h3>
+                    <form action="">
+                        <ul class="jogador-posit-menu">
+                            <li>
+
+                                <input type="button" id="gerar" onclick="gerarCartela()" value="Jogar!" class="menu-button">
+                            </li>
+                        <li>
+                            <a href="" class="menu-button">Voltar ao inicio</a>
+                        </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+            <div class="division card-right">   
+                <div id="cartela"></div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
