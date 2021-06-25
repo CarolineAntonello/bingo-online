@@ -19,7 +19,7 @@ function gerarTabelaSorteio(){
     posicao = verificaPosicao(numArr.length)
     min = posicao == 1 ? 1 : ((posicao-1)*16)+1;
     max = posicao == 1 ? 16: posicao*16;
-    if(numArr.length != 75 && numArr.indexOf(num) > -1 || num == 0 || num < min || num > max ){
+    if(numArr.length != 80 && numArr.indexOf(num) > -1 || num == 0 || num < min || num > max ){
         gerarTabelaSorteio();
     }
     else{
