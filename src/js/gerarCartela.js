@@ -12,10 +12,10 @@ function gerarCartela(){
     for ( let i = 0; i < 5; i++){
         tr = document.createElement('tr');
         for ( let j = 0; j < 5; j++){
-            num = gerarNumeroAleatorio(85);
+            num = gerarNumeroAleatorio(81);
             posicao = verificaPosicao(numArr.length)
-            min = ((posicao-1)*15)+1;
-            max = posicao*15;
+            min = ((posicao-1)*16)+1;
+            max = posicao*16;
             if(numArr.indexOf(num) > -1 || num == 0 || num < min || num > max ){
                 j--;
             }      

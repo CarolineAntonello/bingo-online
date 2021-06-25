@@ -7,7 +7,7 @@ function gerarTabelaSorteio(){
     if(numArr.length == 0 || numArr.length%5 == 0){
         tr = document.createElement('tr');
     }
-    if(numArr.length == 85 ){
+    if(numArr.length == 80){
         document.getElementById("sortear").setAttribute("disable","disable");
         return;
     }
@@ -15,12 +15,11 @@ function gerarTabelaSorteio(){
     var td;
     var num; 
     
-    
-    num = gerarNumeroAleatorio(76);
+    num = gerarNumeroAleatorio(81);
     posicao = verificaPosicao(numArr.length)
     min = posicao == 1 ? 1 : ((posicao-1)*16)+1;
     max = posicao == 1 ? 16: posicao*16;
-    if(numArr.length != 85 && numArr.indexOf(num) > -1 || num == 0 || num < min || num > max ){
+    if(numArr.length != 75 && numArr.indexOf(num) > -1 || num == 0 || num < min || num > max ){
         gerarTabelaSorteio();
     }
     else{
@@ -31,11 +30,10 @@ function gerarTabelaSorteio(){
         tr.appendChild(td);
     }
     
-    
     table.appendChild(tr);
     
     tableSpace.appendChild(table);
-    if(numArr.length == 85){
+    if(numArr.length == 80){
         document.getElementById("sortear").setAttribute("disabled","disabled");
     }
 }
