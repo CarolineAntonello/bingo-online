@@ -44,9 +44,6 @@ body{
     min-height: 100vh;  
     color: #333;
 }
-body.home{
-    /*background-image: url(../images/fundo-festa-junina.jpg);*/
-}
 .container{ 
     margin: auto;
     position: relative;
