@@ -18,28 +18,16 @@
     <title>Bingo online</title>
     <script src="../js/main.js"></script>
     <script src="../js/gerarCartela.js"></script>
+    <script>
+        window.onload = function() {
+            gerarCartela();
+        };
+    </script>
 </head>
 <body>
     <div class="container">
         <div class="main-card">
-            <div class="division card-left">
-                
-                <div class="menu" id="menu-cartela">
-                    <h1>Clique no botão abaixo para gerar uma cartela</h1>
-                    <h3>Boa sorte!</h3>
-                    <form action="">
-                        <ul class="jogador-posit-menu">
-                            <li>
-                                <input type="button" id="gerar" onclick="gerarCartela()" value="Jogar!" class="menu-button">
-                            </li>
-                            <li>
-                                <a href="https://carolineantonello.github.io/bingo-online/" class="menu-button">Voltar ao inicio</a>
-                            </li>
-                        </ul>
-                    </form>
-                </div>
-            </div>
-            <div class="division card-right">   
+            <div class=" card-right">   
                 <div id="cartela"></div>
             </div>
             
