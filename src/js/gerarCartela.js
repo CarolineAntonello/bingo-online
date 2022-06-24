@@ -24,7 +24,7 @@ function gerarCartela(){
                 td = document.createElement('td');
                 if(numArr.length != 13){
                     td.addEventListener("click",function(){
-                        this.classList.add("marked");
+                        this.classList.toggle("marked");
                     });
                 }
                 if(numArr.length == 13){
